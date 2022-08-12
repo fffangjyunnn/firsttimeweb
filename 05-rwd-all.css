@@ -1,0 +1,327 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;   
+   }
+/* body{
+   width: 1920px;
+   height: 1080px;
+} */
+.nav{
+   width: 367px;
+   height: 100vh;
+   background-color: lightblue;
+   float: left;
+   padding-top: 75px;
+}
+.main{
+   width: calc(100% - 367px);
+   height: 100vh;
+   background-color:aliceblue;
+   float: right;
+   position: relative;
+}
+
+.logo{
+   width: 150px;
+   height: 150px;
+   background-color: aquamarine;
+   margin: auto;
+   margin-bottom: 60px;
+}
+.links{
+   margin: auto;
+   width: 150px;
+   height: 150px;
+   background-color: lightgoldenrodyellow;
+}
+a{
+   display: block;
+   text-align: center;
+   margin-bottom: 5px;
+   color: brown;
+}
+.container{
+   width: 955px;
+   height: 570px;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+.container > div{
+   width: 315px;
+   height: 570px;
+   background-color: wheat;
+   float: left;
+
+   background-size: cover;
+   background-repeat: no-repeat;
+
+}
+.container .x{
+    background-image: url('./ocean.webp');
+    background-position: 70%;
+
+}
+.container .y{
+    margin: 0px 5px;
+    background-image: url('./mountains.jpeg');
+    background-position: 70%;
+}
+.container .z{
+    background-image: url('./beach.jpeg');
+    /* width: unset;
+    height: unset; */
+}
+@media (max-width:1400px) {
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;   
+       }
+    /* body{
+       width: 1920px;
+       height: 1080px;
+    } */
+    .nav{
+       width: 367px;
+       height: 100vh;
+       background-color: lightblue;
+       float: left;
+       padding-top: 75px;
+    }
+    .main{
+       width: calc(100% - 367px);
+       height: 100vh;
+       background-color:aliceblue;
+       float: right;
+       position: relative;
+    }
+    /* small-pc跟pc兩者的nav一樣格式，可直接複製 */
+    .logo{
+       width: 150px;
+       height: 150px;
+       background-color: aquamarine;
+       margin: auto;
+       margin-bottom: 60px;
+    }
+    .links{
+       margin: auto;
+       width: 150px;
+       height: 150px;
+       background-color: lightgoldenrodyellow;
+    }
+    a{
+       display: block;
+       text-align: center;
+       margin-bottom: 5px;
+       color: brown;
+    }
+    /* 依small-pc用小畫家量出的尺寸更改 */
+    .container{
+       width: 800px;
+       height: 570px;
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%, -50%);
+    }
+    
+    
+    .container .x{
+        width: 800px;
+        height: 280px;
+        background-color: aquamarine;
+        margin-bottom: 10px;
+        /* background-position: 70%; */
+        /* 圖片屬性 */
+    }
+    .container .y{
+        width: 395px;
+        height: 280px;
+        background-color: aqua;
+        /* background-position: 70%; */
+        float: left;
+    }
+    .container .z{
+        width: 395px;
+        height: 280px;
+        background-color:wheat;
+        /* background-image: url('./beach.jpeg'); */
+        float: right;
+    }
+   
+    
+}
+
+@media (max-width:1200px) {
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;   
+    }
+    .nav{
+    width: 100%;
+    height: 100px;
+    background-color: wheat;
+    padding: 10px 35px;
+    float: unset;
+    
+    }
+    .logo{
+    width: 80px;
+    height: 80px;
+    background-color: aquamarine;
+    float: left;
+    margin: 0px;
+
+    }
+    .links{
+    /* background-color: aliceblue; */
+    float: right;
+    height: 100%;
+    margin: 0px;
+    background-color: unset;
+    width: unset;
+    }
+    a{
+    line-height: 80px;
+    margin-left: 40px;
+    color: brown;
+    display: unset;
+    text-align: unset;
+    margin-bottom: 0px;
+    }
+    .main{
+    width: 100%;
+    padding: 50px 35px 75px;
+    background-color: aquamarine;
+    height: unset;
+    float: unset;
+    position: unset;
+
+
+ 
+
+    }
+    .container{
+    width: 100%;
+    height: 800px;
+    background-color: lightgray;
+    position: unset;
+    transform: unset;
+
+    }
+    .container .x{
+    width: 100%;
+    height: calc(50% - 5px);
+    background-color: aquamarine;
+    margin-bottom: 10px;
+
+
+
+    }
+    .container .y{
+    width: calc(50% - 5px) ;
+    height: calc(50% - 5px);
+    background-color: lightblue;
+    float: left;
+    }
+    .container .z{
+    width:  calc(50% - 5px);
+    height:  calc(50% - 5px);
+    background-color: lightblue;
+    float: right;
+    }
+    
+}
+
+@media (max-width:550px) {
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;   
+    }
+        .nav{
+            width: 100%;
+            height: 80px;
+            background-color: wheat;
+            padding: 12px 18px;
+            position: relative;
+        }
+        .logo{
+            width: 55px;
+            height: 55px;
+            background-color: aquamarine; 
+            position: absolute;
+            top: calc(50% - 28px);
+            left: calc(50% - 28px);
+
+    
+        }
+        .links{
+            width: 100px;
+            height: 100%;
+            float: left;
+            /* height: 100%; */
+            background-color: yellow;
+            padding: 10px;
+            margin: unset;
+            /* position: absolute;
+            top: 15px;
+            left: 20px; */
+
+        }
+        a{
+            /* line-height: 40px;
+            color: brown; */
+            display: none;
+            line-height: 24px;
+
+             }
+        a:hover{
+            display: inline;
+        }
+        .links:hover>a{
+            display: inline;
+
+        }
+        .main{
+            width: 100%;
+            height: 587px;
+            min-height: calc(100vh - 80px);
+            background-color: lightblue;
+            
+        }
+        .container{
+            width: 100%;
+            height: unset;
+            /* height: 100%;
+            background-color: lightgoldenrodyellow; */
+        }
+        .container .x{
+            width: 100%;
+            /* height: calc(100% / 3); */
+            height: 195px;
+            background-color: aqua;
+            margin-bottom: 0px;
+            /* background-color: unset; */
+        }
+        .container .y{
+            width: 100%;
+            /* height: calc(100% / 3); */
+            height: 195px;
+            background-color: aquamarine;
+            /* background-color: unset; */
+        }
+        .container .z{
+            width: 100%;
+            /* height: calc(100% / 3); */
+            height: 195px;
+            background-color: aqua;
+            /* background-color: unset; */
+        }
+
+    
+}
